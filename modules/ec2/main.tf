@@ -1,7 +1,6 @@
 resource "aws_instance" "instance" {
   ami           = var.ami
   instance_type = var.instance_type
-  vpc_security_group_ids = [data.aws_security_group.allow-all]
 
   tags = {
     Name = local.tagName
