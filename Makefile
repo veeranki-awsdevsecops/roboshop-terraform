@@ -7,10 +7,10 @@ dev-plan:
 	terraform plan -var-file=./environments/dev/main.tfvars
 
 dev-apply: dev-init
-	terraform apply -auto-approve -var-file=./environments/dev/main.tfvars
+	terraform apply -auto-approve -var-file=./environments/dev/main.tfvars -var token=$(token)
 
 dev-destroy: dev-init
-	terraform destroy -auto-approve -var-file=./environments/dev/main.tfvars
+	terraform destroy -auto-approve -var-file=./environments/dev/main.tfvars -var token=$(token)
 
 
 
@@ -23,10 +23,10 @@ prod-plan:
 	terraform plan -var-file=./environments/dev/main.tfvars
 
 prod-apply: prod-init
-	terraform apply -auto-approve -var-file=./environments/dev/main.tfvars
+	terraform apply -auto-approve -var-file=./environments/dev/main.tfvars -var token=$(token)
 
 prod-destroy: prod-init
-	terraform destroy -auto-approve -var-file=./environments/dev/main.tfvars
+	terraform destroy -auto-approve -var-file=./environments/dev/main.tfvars -var token=$(token)
 
 tools-infra:
 	git pull
