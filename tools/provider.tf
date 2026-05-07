@@ -11,7 +11,7 @@ terraform {
   }
 }
 
-# provider "vault" {
-#   address = "http://vault-internal.veerankitek.online:8200"
-#   token   = var.token
-# }
+ provider "vault" {
+   address = "http://vault-internal.veerankitek.online:8200"
+   token   = var.token
+ }
