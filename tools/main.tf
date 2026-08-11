@@ -1,15 +1,12 @@
-# module "tools" {
-#   for_each = var.tools
-#   source = "../modules/ec2"
-#   ami    = var.ami
-#   env    = null
-#   instance_type = each.value["instance_type"]
-#   name = each.key
-#   zone_id = var.zone_id
-#   token = var.token
-# }
-
-module "eks" {
-  source = "../modules/eks"
+module "tools" {
+  for_each = var.tools
+  source = "../modules/ec2"
+  ami    = var.ami
+  env    = null
+  instance_type = each.value["instance_type"]
+  name = each.key
+  zone_id = var.zone_id
+  token = var.token
 }
+
 
