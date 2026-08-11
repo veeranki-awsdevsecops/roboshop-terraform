@@ -3,7 +3,7 @@ resource "aws_eks_cluster" "main" {
   role_arn = aws_iam_role.cluster.arn
   version  = "1.35"
   vpc_config {
-    subnet_ids = [subnet-02d82de97d2992105,subnet-0cb859c707ef3f6c4]
+    subnet_ids = ["subnet-02d82de97d2992105","subnet-0cb859c707ef3f6c4"]
   }
 }
 
