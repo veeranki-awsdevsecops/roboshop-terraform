@@ -1,5 +1,5 @@
 variable "zone_id" {
-  default = "Z04501692SQQY9UXD55QE"
+  default = "Z0770137ACL36Z64Q59N"
 }
 
 variable "ami" {

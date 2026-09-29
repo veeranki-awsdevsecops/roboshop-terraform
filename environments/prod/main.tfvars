@@ -33,5 +33,5 @@ instances = {
 
 env           = "prod"
 ami           = "ami-0220d79f3f480ecf5"
-zone_id       = "Z04501692SQQY9UXD55QE"
+zone_id       = "Z0770137ACL36Z64Q59N"
 zone_name     = "veerankitek.online"
